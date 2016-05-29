@@ -1,0 +1,5 @@
+---
+title: hadoop
+---
+Now: {{ date }}
+
