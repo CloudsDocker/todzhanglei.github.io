@@ -21,5 +21,7 @@ title: Microservices vs. SOA
 
 ### Related links:
 
-_ [InfoQ Discussions](https://www.infoq.com/news/2015/12/soa-v-microservices)
-_ [StackOverFlow] (http://stackoverflow.com/questions/25501098/difference-between-microservices-architecture-and-soa)
+- [InfoQ Discussions](https://www.infoq.com/news/2015/12/soa-v-microservices)
+- [StackOverFlow](http://stackoverflow.com/questions/25501098/difference-between-microservices-architecture-and-soa)
+- [Microservices tag desc](http://stackoverflow.com/tags/microservices/info)
+- [MartinFowler](http://martinfowler.com/articles/microservices.html)
