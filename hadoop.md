@@ -1,12 +1,16 @@
 ---
+layout: default
 title: hadoop
-tag: hadoop,bigdata
+tag: hadoop
 ---
-Now: {{ date }}
-#This is regarding the hadoop sharing
+
+Now: 
+
+# This is regarding the hadoop sharing
 
 Including
-* Hadoop basics
-* HDFS
-* YARN
+
+- Hadoop basics
+- HDFS
+- YARN
 
