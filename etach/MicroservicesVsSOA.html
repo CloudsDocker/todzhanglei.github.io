@@ -6,11 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Welcome to Jekyll!</title>
-  <meta name="description" content="You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different wa...">
+  <title>Microservices vs. SOA</title>
+  <meta name="description" content="todzhanglei is my github page, I'm a pansionate and an enthusiast for  Java coder & architect, BigData.  Familiar with financial industry and mobile Internet. My wechat username is helloworld_2000
+">
 
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="http://yourdomain.com/myblog/jekyll/update/2016/05/17/welcome-to-jekyll.html">
+  <link rel="canonical" href="http://yourdomain.com/MicroservicesVsSOA.html">
   <link rel="alternate" type="application/rss+xml" title="todd zhang" href="http://yourdomain.com/feed.xml">
 </head>
 
@@ -76,34 +77,31 @@
 
     <div class="page-content">
       <div class="wrapper">
-        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+        <h1 id="differences-between-microservices-and-soa">Differences between Microservices and SOA</h1>
 
-  <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">Welcome to Jekyll!</h1>
-    <p class="post-meta"><time datetime="2016-05-17T22:20:22+08:00" itemprop="datePublished">May 17, 2016</time></p>
-  </header>
+<h2 id="definitaion-of-soa">Definitaion of SOA</h2>
 
-  <div class="post-content" itemprop="articleBody">
-    <p>You’ll find this post in your <code class="highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+<ul>
+  <li><code class="highlighter-rouge">Boundaries</code> are explicit</li>
+  <li>Services are <code class="highlighter-rouge">autonomous</code></li>
+  <li>Services share __ schema __ and <strong>contract</strong>, not class</li>
+  <li>Service compatibility is based on policy</li>
+</ul>
 
-<p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+<hr />
 
-<p>Jekyll also offers powerful support for code snippets:</p>
+<blockquote>
+  <p>In short, the microservice architectural style is an approach to developing a single application as a suite of small services, each running in its own process and communicating with lightweight mechanisms, often an HTTP resource API. These services are built around business capabilities and independently deployable by fully automated deployment machinery. There is a bare mininum of centralized management of these services, which may be written in different programming languages and use different data storage technologies.</p>
+</blockquote>
 
-<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
-  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
-<span class="k">end</span>
-<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
-<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+<h3 id="related-links">Related links:</h3>
 
-<figure class="highlight"><pre><code class="language-java" data-lang="java"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">"hello markdown!"</span><span class="o">);</span></code></pre></figure>
-
-<p>Check out the <a href="http://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
-
-
-  </div>
-
-</article>
+<ul>
+  <li><a href="https://www.infoq.com/news/2015/12/soa-v-microservices">InfoQ Discussions</a></li>
+  <li><a href="http://stackoverflow.com/questions/25501098/difference-between-microservices-architecture-and-soa">StackOverFlow</a></li>
+  <li><a href="http://stackoverflow.com/tags/microservices/info">Microservices tag desc</a></li>
+  <li><a href="http://martinfowler.com/articles/microservices.html">MartinFowler</a></li>
+</ul>
 
       </div>
     </div>
