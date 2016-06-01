@@ -1,8 +1,9 @@
 ---
+layout: page
 title: Setup Git in Mint Linux 
 ---
 
-etup Git in Mint Linux
+Setup Git in Mint Linux
 =================================================
 
 - git config --global user.name "Todd Zhang"
