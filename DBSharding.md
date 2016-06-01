@@ -25,7 +25,8 @@ Orgional Oracle is replaced by multiple MySQL DB, supporintg one master and mult
 1. Multiple ID. i.e. userID in (?,?,?)
 1. Not show
 
-|Field*|* Single ID *|* Multiple ID *|* Not show|
-userID | 120 | 40| 330
-orderID | 60 | 80| 360
-shopID | 15 | 0| 485
+|Field| Single ID | Multiple ID | Not show|
+|:---| ---:| ---:| ---:|
+|userID | 120 | 40| 330|
+|orderID | 60 | 80| 360|
+|shopID | 15 | 0| 485|
