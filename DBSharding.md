@@ -42,7 +42,7 @@ There are two type of strategies
 Pros and Cons:
 
 |Criteria| By Range| By Mod | 
-|:---| ---:| ---:|
+|:---|:---|:---|
 |number of DBs |initially only require small amount of DBs, can increasse by business requests | initially number based on mod number, normally a big number|
 |Accessibility|initially only few DBs, perforamce cost is small, single DB performance query is poor|initially big number of DBs, query acorss DBs may consume many resources, better for query on single DB|
 |DBs adjustment|easy, just add new DB, and impact is limit when split existing DB |not easy, change mod value  may result in DB migration across DBs|
