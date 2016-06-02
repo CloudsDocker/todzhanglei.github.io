@@ -40,6 +40,7 @@ There are two type of strategies
 1. By value mod, e.g. userID mod n, when reminder is 0, go to DB1, reminder is 1, to DB2, etc.
 
 Pros and Cons:
+
 |Criteria| By Range| By Mod | 
 |:---| ---:| ---:|
 |number of DBs |initially only require small amount of DBs, can increasse by business requests | initially number based on mod number, normally a big number|
