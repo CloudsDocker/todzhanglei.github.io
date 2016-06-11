@@ -1,14 +1,9 @@
 ---
 layout: default
-title: hadoop
-tag: hadoop
+title: book marks
+tag: site
 ---
 
-# This is regarding the hadoop sharing
-
-Including
-
-- Hadoop basics
-- HDFS
-- YARN
-
+# site maps
+- http://davidensinger.com/2013/11/building-a-better-sitemap-xml-with-jekyll/
+- http://davidensinger.com/2013/03/generating-a-sitemap-in-jekyll-without-a-plugin/
