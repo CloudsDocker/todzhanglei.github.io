@@ -9,9 +9,7 @@
 title: todd zhang
 email: phray.zhang@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  todzhanglei is my github page, I'm a pansionate and an enthusiast for
-  Java coder & architect, BigData.
-  Familiar with financial industry and mobile Internet. My wechat username is helloworld_2000
+  Please access about page on top right corner :-)
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: phray.zhang@gmail.com
@@ -19,7 +17,7 @@ github_username: todzhanglei
 #permalink: pretty
 
 gems:
-  - jemoji # Emoji please!
+#  - jemoji # Emoji please!
   - jekyll-sitemap
 
 # Build settings
