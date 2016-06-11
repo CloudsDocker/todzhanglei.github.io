@@ -59,3 +59,6 @@ To certain extent, DB sharding means change of DBSChema, which inevitable result
 1. For access to single DB, e.g. query by certain user id, DAL will automatically route to that DB, even further split by mod, still no applicaiton logic code change impacted.
 1. For simple across DB query, DAL in charge to aggregate results from every DB query, still transparent to upper application logic.
 1. For query involves multiple DBs with aggretation functions, e.g. groupBy, order by, min, max, avg. It's recommended DAL consolidate request from single DB, while upper layers do further processing. That's becuase if rely on DAL, it would be too complex, and such case is relatively rare case, so leave it to upper layer.
+
+
+--End--
