@@ -1,0 +1,41 @@
+
+<hr />
+<p>layout: page
+title: Load Balancing
+—</p>
+
+<h1 id="concepts">Concepts</h1>
+<p><code class="highlighter-rouge">LVS</code> means Linux Virtual Server</p>
+
+<h2 id="never-queue-shceduling">Never Queue Shceduling</h2>
+<blockquote>
+  <p>The never queue scheduling algorithm adpots a two-speed model
+1. When there is an idel server avaiable, the job will be sent to the idel server, instead of waiting for a fast one.
+1. When there is no idel server avaiable, the job will be sent to the server that minimize it’s expected delay.</p>
+</blockquote>
+
+<h2 id="examples-of-setup-lvs">Examples of setup LVS</h2>
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>ipvsadm -A -t 192.168.0.1:80 -s rr
+ipvsadm -a -t 192.168.0.1:80 -r 172.16.0.1:80 -m
+ipvsadm -a -t 192.168.0.1:80 -r 172.16.0.2:80 -m
+</code></pre>
+</div>
+<ul>
+  <li>The first command assign TCP port 80 on IP address 192.168.0.1 to the virtual server, the shceduling algorithm for load balancing is <code class="highlighter-rouge">-s rr</code> means using round-robin</li>
+  <li>The 2nd and 3rd commands are adding IP addresss of <code class="highlighter-rouge">real servers</code> to the LVS setup</li>
+  <li>the forwarded network packets shall be masked <code class="highlighter-rouge">-m</code></li>
+</ul>
+
+<h2 id="examples-to-query-lvs-status">Examples to query LVS status</h2>
+<div class="language-sh highlighter-rouge"><pre class="highlight"><code>ipvsadm -L -n
+IP Virtual Server version 1.0.8 <span class="o">(</span><span class="nv">size</span><span class="o">=</span>65536<span class="o">)</span>
+Prot LocalAddress:Port Scheduler Flags
+  -&gt; RemoteAddress:Port           Forward Weight ActiveConn InActConn
+TCP  192.168.0.1:80 rr
+  -&gt; 172.16.0.2:80                Masq    1      3          1
+  -&gt; 172.16.0.1:80                Masq    1      4          0
+</code></pre>
+</div>
+
+<h2 id="strucutre-of-lvs-in-wikipedia">Strucutre of LVS in wikipedia</h2>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Wikimedia_Server_Architecture_%28simplified%29.svg/743px-Wikimedia_Server_Architecture_%28simplified%29.svg.png" alt="Strucutre of LVS in wikipedia" /></p>

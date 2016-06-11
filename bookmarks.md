@@ -1,14 +1,10 @@
 ---
 layout: default
-title: hadoop
+title: bookmarks
 tag: hadoop
 ---
 
-# This is regarding the hadoop sharing
+# Dockers
 
-Including
-
-- Hadoop basics
-- HDFS
-- YARN
+- (Why not using sshd in docker in oschia)[http://www.oschina.net/translate/why-you-dont-need-to-run-sshd-in-docker]
 
