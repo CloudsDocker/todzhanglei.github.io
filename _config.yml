@@ -18,5 +18,8 @@ twitter_username: phray.zhang@gmail.com
 github_username: todzhanglei 
 #permalink: pretty
 
+gems:
+  - jekyll-sitemap
+
 # Build settings
 markdown: kramdown
