@@ -32,3 +32,23 @@ show the 2nd column
 ```sh
 lsb_release --Codename | cut -f2
 ```
+
+## gpsswd
+
+DESCRIPTION
+gpasswd is used to administer the /etc/group file (and /etc/gshadow file if compiled with SHADOWGRP defined). Every group can have administrators, members and a password. System administrator can use -A option to define group administrator(s) and -M option to define members and has all rights of group administrators and members.
+
+Notes about group passwords
+Group passwords are an inherent security problem since more than one person is permitted to know the password. However, groups are a useful tool for permitting co-operation between different users.
+
+OPTIONS
+Group administrator can add and delete users using -a and -d options respectively. Administrators can use -r option to remove group password. When no password is set only group members can use newgrp to join the group. Option -R disables access via a password to the group through newgrp command (however members will still be able to switch to this group).
+
+gpasswd called by a group administrator with group name only prompts for the group password. If password is set the members can still newgrp(1) without a password, non-members must supply the password.
+
+FILES
+Tag	Description
+/etc/group
+ 	Group account information.
+/etc/gshadow
+ 	Secure group account information.
