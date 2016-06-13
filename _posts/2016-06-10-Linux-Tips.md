@@ -13,9 +13,13 @@ grep -ri 'architect' . | awk -F ':' '{print $1}'
 ```
 
 # Show Linux kernel and name
+## lsb_release
 `lsb` means Linux Standard Base , `-a` means print all information
 ```sh
 lsb_release -a -u
+```
+will output
+```sh
 phray@phray-VirtualBox ~ $ lsb_release -a -u
 No LSB modules are available.
 Distributor ID:	Ubuntu
@@ -23,6 +27,24 @@ Description:	Ubuntu 14.04 LTS
 Release:	14.04
 Codename:	trusty
 ```
+## /etc/os-release
+```sh
+cat /etc/os-release
+```
+will output Following
+```sh
+phray@phray-VirtualBox ~ $ cat /etc/os-release
+NAME="Ubuntu"
+VERSION="14.04.2 LTS, Trusty Tahr"
+ID=ubuntu
+ID_LIKE=debian
+PRETTY_NAME="Ubuntu 14.04.2 LTS"
+VERSION_ID="14.04"
+HOME_URL="http://www.ubuntu.com/"
+SUPPORT_URL="http://help.ubuntu.com/"
+BUG_REPORT_URL="http://bugs.launchpad.net/ubuntu/"
+```
+
 Following is the command found in docker.sh
 ```sh
 lsb_dist=$(lsb_release -a -u 2>&1 | tr '[:upper:]' '[:lower:]' | grep -E 'id' | cut -d ':' -f 2 | tr -d '[[:space:]]')
