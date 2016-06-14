@@ -1,5 +1,6 @@
 ---
-published: false
+Layout: page
+Title: Github page commands notes
 ---
 ## following lages are searchable in google 
 
